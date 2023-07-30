@@ -31,7 +31,7 @@ const ProductPage = ({ products, removeProduct }) => {
                                 <td>{item.price}</td>
                                 <td>
                                     <button onClick={() => onHandleRemove(item.id)}>Delete</button>
-                                    <button><Link to={`/admin/product/update/${item.id}`}>Update</Link></button>
+                                    <Link to={`/admin/product/update/${item.id}`}><button>Update</button></Link>
                                 </td>
                             </tr>
                         )
